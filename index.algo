@@ -1,0 +1,29 @@
+ALGORITHM algorithm_name
+VAR
+    str: STRING
+    i=INTEGER:= 0
+    length_sentence , number_words, number_vowels:INTIGER:= 0
+
+BEGIN
+    DO
+        write ('write the sentence');
+        read(str);
+    WHILE (str[str.lenght-1]<>'.')
+
+
+    WHILE (str[i]<>".") DO
+        IF (str[i]===" ") THEN
+            number_words := number_words + 1
+        ELSE_IF (str [i]=['a','o','u','y','i','e'] )THEN
+            number_vowels := number_vowels + 1
+            length_sentence := length_sentence +1
+        ELSE
+            length_sentence := length_sentence +1
+        END_IF
+        i++
+    END_WHILE
+        write ('length_sentence :', length_sentence);
+        write ('number_words:', number_words);
+        write ('number_vowels:', number_vowels);
+END
+
